@@ -180,8 +180,8 @@ Future data collection should include:
 
 ## Live Dashboard
 
-(Add your Streamlit link here)
+(https://dealership-lead-analytics-xbcgzu3suriteg9tvzpbey.streamlit.app/)
 
 ## GitHub Repository
 
-(Add your GitHub repo link here)
+(https://github.com/heyangzzhang-wq/dealership-lead-analytics)
