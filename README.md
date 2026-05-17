@@ -209,6 +209,10 @@ Future data collection should include:
 
 ---
 
+## Power BI Dashboard Preview
+
+![Power BI Dashboard](powerbi_dashboard.png)
+
 # GitHub Repository
 
 https://github.com/heyangzzhang-wq/dealership-lead-analytics
