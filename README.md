@@ -2,186 +2,213 @@
 
 ## Project Overview
 
-This project analyzes **534 anonymized customer leads** from a real used-car dealership to evaluate lead generation performance, sales conversion efficiency, and customer acquisition quality across multiple channels.
+This project analyzes 534 anonymized customer leads from a real used-car dealership to evaluate lead generation performance, sales conversion efficiency, and customer acquisition quality across multiple sales channels.
 
-The goal of the project was to build a real-world business intelligence dashboard that helps management answer critical sales and marketing questions such as:
+The objective was to build a real-world business intelligence workflow that transforms raw dealership lead data into actionable business insights through SQL analysis, Python, Streamlit, and Power BI.
+
+The dashboard helps answer key operational and marketing questions such as:
 
 - Which platforms generate the most customer inquiries?
-- Which sources generate actual sold deals?
-- Which lead channels have the strongest close rates?
+- Which channels produce the highest conversion rates?
+- Which lead sources generate real sold deals?
 - Which channels create low-quality or low-intent leads?
 - Where should future advertising budget be allocated?
 
-This project was built using SQL-style analysis, Python, and Streamlit to simulate a modern analyst workflow from raw data to executive dashboard reporting.
+---
+
+# Live Dashboard
+
+Streamlit Application:  
+https://dealership-lead-analytics-xbcgzu3suriteg9tvzpbey.streamlit.app/
 
 ---
 
-## Business Problem
-
-High lead volume does **not always mean high value**.
-
-Many dealerships focus heavily on total inquiries, but some platforms create large amounts of low-intent leads that consume salesperson time without generating revenue.
-
-This project demonstrates how performance measurement should shift from:
-
-**Lead Quantity → Lead Quality + Conversion Efficiency + ROI**
-
----
-
-## Tools Used
+# Technologies Used
 
 - PostgreSQL
-- pgAdmin
 - SQL
 - Python
 - Pandas
 - Plotly
 - Streamlit
+- Power BI
 - Excel / CSV Data Cleaning
-- GitHub Deployment
+- GitHub
 
 ---
 
-## Business Questions Answered
+# Business Problem
 
-1. Which lead sources generate the most inquiries?
-2. Which channels produce real sold deals?
-3. Which sources have the highest close rate?
-4. How do monthly lead trends change over time?
-5. Which lead channels should receive future budget?
+High lead volume does not always translate into high business value.
 
----
+Many dealerships focus heavily on total inquiry counts, but some lead sources generate large amounts of low-intent traffic that consume salesperson time without producing meaningful sales opportunities.
 
-## Key Findings
+This project demonstrates why dealerships should evaluate:
 
-### 1. Facebook Marketplace and AutoTrader generated high lead volume
+- Lead Quality
+- Conversion Efficiency
+- Sales Funnel Performance
+- Customer Intent
+- Marketing ROI
 
-Facebook Marketplace and AutoTrader produced the highest volume of inquiries.
-
-However, much of this volume may be explained by low-friction customer behavior:
-
-- Facebook Marketplace allows users to quickly click **“Hi, is this still available?”** with one tap.
-- AutoTrader often sends automatic or template-style inquiries such as requests for Carfax reports.
-
-Many of these leads showed low engagement and often did not continue the conversation after first contact.
-
-This suggests these channels are strong for visibility, but weaker for lead intent quality.
+instead of relying only on total lead volume.
 
 ---
 
-### 2. Higher-intent sources converted better
+# Business Questions Answered
+
+- Which lead sources generate the most inquiries?
+- Which channels produce actual sold deals?
+- Which sources have the highest close rate?
+- How do lead trends change over time?
+- Which channels should receive future advertising budget?
+
+---
+
+# Key Findings
+
+## 1. Facebook Marketplace and AutoTrader generated the highest lead volume
+
+Facebook Marketplace and AutoTrader produced the largest number of customer inquiries.
+
+However, many of these inquiries appeared to be low-intent interactions, including:
+
+- One-click “Is this still available?” messages
+- Automatic inquiry templates
+- Carfax-only requests
+- Low follow-up engagement
+
+These channels provide strong visibility but weaker lead quality.
+
+---
+
+## 2. Higher-intent channels converted more efficiently
 
 Channels such as:
 
-- CarGurus  
-- Walk-in traffic  
-- Redbook referrals  
+- CarGurus
+- Walk-in traffic
+- Redbook referrals
 
-showed meaningfully stronger closing performance.
+showed significantly stronger conversion performance.
 
-These sources often represent customers who are:
+These customers were typically:
 
-- Further along in the buying journey  
-- Comparing vehicles seriously  
-- Ready to visit in person  
+- Further along in the buying process
 - More responsive during follow-up
+- More likely to visit the dealership
+- Higher intent buyers
 
 ---
 
-### 3. Walk-in traffic showed strong buyer intent
+## 3. Walk-in traffic showed strong purchase intent
 
-Walk-in leads had one of the strongest conversion profiles because customers had already taken action to visit the showroom, indicating higher purchase intent than casual online inquiries.
+Walk-in customers demonstrated one of the strongest conversion profiles because they had already committed time and effort to physically visit the dealership.
 
----
-
-### 4. Volume alone can be misleading
-
-If management only tracks total leads, Facebook Marketplace may appear dominant.
-
-But when measuring **sales conversion**, smaller channels can outperform high-volume sources.
-
-This reinforces the importance of evaluating:
-
-- Cost per lead  
-- Response quality  
-- Appointment rate  
-- Showroom visits  
-- Close rate
+This behavior often signals significantly stronger buying intent compared to casual online inquiries.
 
 ---
 
-## Business Recommendations
+## 4. Lead volume alone can be misleading
 
-### Continue Using Facebook Marketplace & AutoTrader for Awareness
+If management only measures total inquiry count, Facebook Marketplace appears dominant.
 
-Use these channels for top-of-funnel exposure and inventory visibility.
+However, when analyzing actual conversion performance, smaller lead channels frequently outperform high-volume platforms.
 
-### Improve Qualification Process
+This reinforces the importance of tracking:
 
-Implement faster filtering for low-intent inquiries through:
+- Conversion Rate
+- Appointment Rate
+- Showroom Visits
+- Lead Quality
+- Sales Efficiency
 
-- automated replies  
-- appointment booking links  
-- follow-up scoring  
-- response prioritization
+---
 
-### Increase Focus on Higher-Converting Sources
+# Business Recommendations
 
-Allocate more attention and budget toward:
+## Continue Using Facebook Marketplace & AutoTrader for Awareness
 
-- CarGurus  
-- Walk-in traffic strategies  
-- Referral channels such as Redbook
+These platforms remain valuable for:
 
-### Track More KPIs Going Forward
+- Inventory exposure
+- Brand visibility
+- Top-of-funnel awareness
+
+---
+
+## Improve Lead Qualification Process
+
+Implement better filtering and prioritization through:
+
+- Automated responses
+- Appointment scheduling
+- Lead scoring
+- Faster response workflows
+
+---
+
+## Increase Focus on Higher-Converting Channels
+
+Allocate additional attention and marketing focus toward:
+
+- CarGurus
+- Referral-based traffic
+- Walk-in acquisition strategies
+
+---
+
+## Expand Future KPI Tracking
 
 Future data collection should include:
 
-- Ad spend by platform  
-- Appointment booked rate  
-- Show-up rate  
-- Gross profit per deal  
+- Advertising spend by platform
+- Appointment booking rate
+- Show-up rate
+- Gross profit per deal
 - Time-to-close
+- Salesperson performance
 
 ---
 
-## Skills Demonstrated
+# Skills Demonstrated
 
-- SQL aggregation & joins
-- Funnel / KPI analysis
-- Data cleaning
+- SQL aggregation & KPI analysis
+- Data cleaning & transformation
 - Dashboard development
+- Business intelligence reporting
+- Conversion funnel analysis
 - Executive storytelling with data
-- Conversion rate optimization
-- Real business analytics
-- Deployment using GitHub + Streamlit
+- Marketing performance analytics
+- GitHub deployment
+- Streamlit application deployment
+- Power BI dashboard development
 
 ---
 
-## Project Files
+# Project Files
 
-- `app.py` → Interactive dashboard  
-- `queries.sql` → SQL business analysis queries  
-- `data/leads_anonymized.csv` → Clean dataset  
-- `README.md` → Documentation  
+| File | Description |
+|---|---|
+| `app.py` | Streamlit dashboard application |
+| `queries.sql` | SQL business analysis queries |
+| `powerbi:dealership_dashboard.pbix` | Power BI dashboard |
+| `data/leads_anonymized.csv` | Clean anonymized dealership dataset |
+| `README.md` | Project documentation |
 
 ---
 
-## Future Improvements
+# Future Improvements
 
 - Predictive lead scoring model
 - Monthly sales forecasting
-- Cost-per-acquisition dashboard
-- Salesperson performance analytics
+- Marketing ROI dashboard
+- Cost-per-acquisition tracking
 - CRM automation recommendations
-- Marketing ROI model
+- Salesperson performance analytics
 
 ---
 
-## Live Dashboard
+# GitHub Repository
 
-(https://dealership-lead-analytics-xbcgzu3suriteg9tvzpbey.streamlit.app/)
-
-## GitHub Repository
-
-(https://github.com/heyangzzhang-wq/dealership-lead-analytics)
+https://github.com/heyangzzhang-wq/dealership-lead-analytics
